@@ -1,2 +1,0 @@
-- [Proyecto Sistema de Gestión de Órdenes de Restaurante](project_restaurant_orders.md) — PRD v1.0 generado 2026-04-02; pendiente validar canales digitales, país y num. sucursales
-- [Perfil del usuario](user_profile.md) — dueño de cadena de restaurantes, no técnico, prioriza confiabilidad, visibilidad y escalabilidad; comunica en español
