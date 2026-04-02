@@ -4,7 +4,27 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Purpose
 
-Workspace for the **Sistema de Gestión de Órdenes de Restaurante** — a reactive Spring Boot microservice built with Hexagonal Architecture (Ports and Adapters) using the `springboot-hexagonal-builder` plugin.
+Workspace for the **Sistema de Gestión de Órdenes de Restaurante (SGOR)** — a reactive Spring Boot microservice built with Hexagonal Architecture (Ports and Adapters) using the `springboot-hexagonal-builder` plugin.
+
+SGOR centralizes order management for a restaurant chain: receives orders from physical tables (waitstaff) and digital channels (customers), communicates comandas in real time to a Kitchen Display System (KDS), tracks full order lifecycle, and closes the business cycle with payment and receipt generation.
+
+## Domain Model
+
+Core entities and their key states:
+
+| Entity | Key States / Notes |
+|--------|-------------------|
+| `Orden` | PENDIENTE → EN_PREPARACION → LISTA → ENTREGADA → CERRADA \| CANCELADA |
+| `ItemOrden` | Belongs to an Orden; has quantity and optional modifications |
+| `ProductoMenu` | Catalog item with name, price, category, availability flag |
+| `Mesa` | Physical table with identifier, capacity, and occupancy state (LIBRE / OCUPADA) |
+
+Order channels: **mesa física** (waitstaff-operated terminal/tablet) and **canal digital** (customer self-service app/web).
+
+## Project Documentation
+
+- `docs/prd/PRD-sistema-gestion-ordenes-restaurante.md` — product vision, success criteria, scope, stakeholders
+- `docs/srs/SRS-sistema-gestion-ordenes-restaurante.md` — functional/non-functional requirements, use cases, data model, traceability matrix
 
 ## Available Skills
 
