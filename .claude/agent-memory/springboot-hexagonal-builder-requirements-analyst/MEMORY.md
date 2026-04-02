@@ -1,0 +1,2 @@
+- [Proyecto SGOR](project_sgor.md) — Contexto, actores, aggregates, riesgos y rutas de archivos del proyecto activo
+- [Perfil de usuario](user_profile.md) — Perfil del cliente final y preferencias tecnológicas declaradas
