@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "springboot-hexagonal-builder@ander-plugins": true
+  }
+}
